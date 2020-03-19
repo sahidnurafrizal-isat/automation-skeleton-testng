@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="com.inmarsat.dpi.testUtils.testNGListeners.ReportListener"/>
+    </listeners>
+    <!--<parameter name="FBVOLSCAPS2012" value="FBVOLSCAPS2012"/>-->
+    <!--<parameter name="SBMONEYSCAPS" value="SBMONEYSCAPS"/>-->
+    <!--<parameter name="BGANHUMANSCAPS" value="BGANHUMANSCAPS"/>-->
+    <!--<parameter name="BGANSCAPS" value="BGANSCAPS"/>-->
+    <!--<parameter name="SBONAIRSCAPS" value="SBONAIRSCAPS"/>-->
+    <!--<parameter name="ISPLSCAPS" value="ISPLSCAPS"/>-->
+    <!--<parameter name="FBWS" value="FBWS"/>-->
+    <!--<parameter name="GSPSFREEUSE" value="GSPSFREEUSE"/>-->
+    <!--<parameter name="SBWS" value="SBWS"/>-->
+    <!--<parameter name="WSBGAN" value="WSBGAN"/>-->
+    <test name="Regression-Clients" preserve-order="true" verbose="1">
+        <classes>
+            <class name="com.inmarsat.dpi.test.customers.TestRun"/>
+            <!--<class name="com.inmarsat.gui.baseTest.gui.clients.MajorDivision"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.clients.Reseller"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.clients.ServiceProvider"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.clients.LandMobile"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.clients.Vessel"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.clients.Aircraft"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.clients.BusinessContact"/>-->
+        </classes>
+    </test>
+    <!--<test name="Package-provisioning" preserve-order="true" verbose="1">-->
+        <!--<classes>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.products.combo.FBVOLSCAPS2012"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.products.combo.SBMONEYSCAPS"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.products.npap.BGANHUMANSCAPS"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.products.npap.SBONAIRSCAPS"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.products.pas.ISPLSCAPS"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.products.postpay.FBWS"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.products.postpay.SBWS"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Service-Orders-Prerequisite" preserve-order="true" verbose="1">-->
+        <!--<classes>-->
+            <!--&lt;!&ndash;NOTE: these 3 test is prerequisite of the Service Orders&ndash;&gt;-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.products.postpay.WSBGAN"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.products.npap.BGANSCAPS"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.products.postpay.GSPSFREEUSE"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="Service-Orders" preserve-order="true" verbose="1">-->
+        <!--<classes>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.products.serviceOrders.SuspensionOrders"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.products.serviceOrders.ResumeOrders"/>-->
+            <!--<class name="com.inmarsat.gui.baseTest.gui.products.serviceOrders.DisconnectOrders"/>-->
+        <!--</classes>-->
+    <!--</test>-->
+</suite>
