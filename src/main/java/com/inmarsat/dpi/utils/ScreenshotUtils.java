@@ -1,11 +1,11 @@
 package com.inmarsat.dpi.utils;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import sun.misc.BASE64Encoder;
 
@@ -15,16 +15,9 @@ import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
 
-/**
- * @Project: InmarsatGUI
- * @Author: Damian Malecki
- * @Contact: damian.malecki@pwc.com
- * @Created: 03.07.2018
- **/
-
 public class ScreenshotUtils {
 
-    private static Logger logger = LoggerFactory.getLogger(ScreenshotUtils.class);
+    private static Logger logger = LogManager.getLogger(ScreenshotUtils.class.getName());
 
     private static String userDir = System.getProperty("user.dir");
 

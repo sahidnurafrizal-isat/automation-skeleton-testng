@@ -1,17 +1,10 @@
 package com.inmarsat.dpi.testUtils;
 
-//import com.inmarsat.gui.datasets.GlobalDataSet;
 import com.relevantcodes.extentreports.ExtentReports;
 import org.testng.Assert;
 
 import java.io.File;
 
-/**
- * @Project: InmarsatGUI
- * @Author: Damian Malecki
- * @Contact: damian.malecki@pwc.com
- * @Created: 03.07.2018
- **/
 public class ExtentManager {
 
     private static ExtentReports extentReport;

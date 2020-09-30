@@ -1,8 +1,8 @@
 package com.inmarsat.dpi.test;
 
 import com.inmarsat.dpi.utils.ScreenshotUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -20,10 +20,12 @@ import static com.inmarsat.dpi.utils.ScreenshotUtils.createScreenshotsDirectory;
  **/
 public class BaseTest {
 
-    private static Logger logger = LoggerFactory.getLogger(BaseTest.class);
+    private static Logger logger = LogManager.getLogger(BaseTest.class.getName());
 
     @BeforeSuite(alwaysRun = true)
     public void initiateSuite() {
+        System.setProperty("log4j.configurationFile","./src/main/resources/log4j2.xml");
+
         createReportDirectory();
         createScreenshotsDirectory();
     }
